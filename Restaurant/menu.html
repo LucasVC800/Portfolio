@@ -4,67 +4,76 @@
         <Title> Home Page </Title>
         <style>
             #menu{
-                 display: table;
-                 margin: 0 auto;
+                display: table;
+                margin: 0 auto;
                     }
             #menuitem{
-                width:150px ;
+                background-color: white;
+                width:200px ;
                 border:1px solid black;
-                height: 150px ;
+                height: 200px ;
                 float: left;
                 text-align: center ;
                 margin-right: 100px;
                 margin-bottom: 40px;
-                    }
-            h4 {
-                margin-bottom:0px; 
                     }
         </style>
         <link 
             href="restaurantStyles.css" 
             rel="stylesheet" 
             type="text/css" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
+            integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
     </head>
     <body>
+            <body>
+        <div class="page-header">
         <center><h1>The Pizza Zone</h1></center><br>
         <hr><br>
-        <div id="header"><a href="restaurant.html">Home</a>
-        <a href="menu.html">Menu</a>
-        <a href="PizzaContact.html">Contact Us</a><br></div>
-        <hr><br>
+        <div id="header">
+     <ul class="nav nav-tabs">
+        <li><a href="restaurant.html"><span class="glyphicon glyphicon-home"></span></a></li>
+        <li class="active"><a href="menu.html">Menu</a></li>
+        <li><a href="PizzaContact.html">Contact Us</a></li>
+    </ul>
+
+        <hr>
+        <br>
+        <p><div id="outer" class="bodybg">
         <div id="menu">
             <div id="menuitem">
-                <h4>Cheese Pizza</h4><br>
+                <h4>Cheese Pizza</h4>
                 A plain pizza with red sauce and no toppings.<br>
                 <b>10.00</b> 
             </div>
             <div id="menuitem">
-                <h4>Pepperoni Pizza</h4><br>
+                <h4>Pepperoni Pizza</h4>
                 Our cheese pizza featuring a kosher approved pepperoni.<br>
                 <b>11.00</b>
             </div>
             <div id="menuitem">
-                <h4>Sausage Pizza</h4><br>
+                <h4>Sausage Pizza</h4>
                 Our cheese pizza with Sausage (not kosher).<br>
                 <b>12.00</b>  
             </div>
             <br><br><br>
             <div id="menuitem">
-                <h4>Vegetarian Pizza</h4><br>
+                <h4>Vegetarian Pizza</h4>
                 An ecologically friendly pizza covered in peppers, onions, and tomatoes.<br>
                 <b>11.00</b>
             </div>
             <div id="menuitem">
-                <h4>Atomic Sauce Pizza</h4><br>
+                <h4>Atomic Sauce Pizza</h4>
                 Our cheese pizza with our imported Atomic Sauce (not for the faint of heart).<br>
                 <b>11.00</b>
             </div>
             <div id="menuitem">
-                <h4>Everything Pizza</h4><br>
+                <h4>Everything Pizza</h4>
                 A pizza with everything listed on the prior menu items.<br>
                 <b>12.00</b> 
             </div>
         </div>
+        </div></p>
      <div id="footer">
         <hr>
         123 Fake Road, Akron, OH, 44302<br>

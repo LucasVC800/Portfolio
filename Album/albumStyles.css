@@ -1,0 +1,41 @@
+          body {
+                background-color:
+                rgba(200, 0, 200, 0.5);
+          }
+          a:link    {
+                  text-decoration:  none;
+                  font-weight:      bold;
+                  color:            blue;
+          } 
+          a:visited{
+                text-decoration: none;
+          }
+          a:hover {
+                background-color: red;
+                text-decoration: underline;
+            }   
+          a:active{
+                text-decoration: none;
+          }
+            table, th, td {
+                border: 1px black solid;
+                background-color: blueviolet;
+            }
+            td { 
+                font-style: italic;
+            }
+            table {
+                width: 80%;
+                background: repeating-linear-gradient(
+                45deg,
+                #ff0000,
+                #ff0000 40px,
+                #257710 40px,
+                #257710 80px);
+            }
+            #fantasy {
+                font-family: fantasy;
+            }
+            #italicized {
+                font-style: italic;
+            }

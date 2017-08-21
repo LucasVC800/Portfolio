@@ -1,0 +1,40 @@
+<!Doctype HMTL>
+<html>
+    <head>
+        <link rel="stylesheet"
+         href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"/>
+         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js">
+        </script>
+    <!-- <script src="check.js"></script> -->
+        <script>
+function getArr(num1, num2, stepNum){
+    var numbers =[];
+    for(var i = num1; i < num2; i += stepNum ) {
+        if (i % 2 == 0 ){
+            numbers.push(i);
+         }
+    }
+    return numbers;
+   document.getElementById("results").innerText = "numbers.values";
+}
+        </script>
+        <style>
+            table, th, td {
+            border: 2px solid black;    
+            }
+
+        </style>
+    </head>
+<div class="container-fluid">
+    <div class="row">
+        <h1>Sample</h1>
+        <div class="form-container">
+            Starting Number: <input type="text" id="min"><br>
+            Ending Number: <input type="text" id="max"><br>
+            Step: <input type="text" id="steps"><br>
+            <input style="color:black" type="button" onclick="getArr(min, max, steps)" value="display evens">
+            </div>
+        </div>
+    </div><br>
+    results<br> <div id="results"> </div>
+</html>

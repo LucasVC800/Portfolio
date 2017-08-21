@@ -3,41 +3,30 @@
     <head>
         <Title> Remixed - Shpongle </Title>
         <style>
-            table, th, td {
-                border: 1px black solid;
-                background-color: white;
-            }
-            table {
-                width: 80%;
-                background: repeating-linear-gradient(
-                45deg,
-                #ff0000,
-                #ff0000 40px,
-                #257710 40px,
-                #257710 80px);
-            }
         </style>
         <link 
             href="albumStyles.css" 
             rel="stylesheet" 
             type="text/css" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" />
     </head>
     <body>
      <center>
-        <img src="Shpongle.jpg" height="300" width="300" style="border: dotted 2px red;"><br>
-        <h1>Remixed</h1>
+        <img class='img-circle' src="shpongle.jpg" /><br>
+        <h1 id="fantasy">Remixed</h1>
         <h2><a href="http://shponglemusic.com/home/">Shpongle</a></h2>
         <h3>2003</h3>
         <hr>
-        <h2>Band Members and Producrs</h2>
+        <h2 id="fantasy">Band Members and Producers</h2>
      </center>
      <ul>
-         <li>Simon Postford - Programming, Production</li>
-         <li>Raja Ram - Programming, Live instruments</li>
+         <div id="italicized"><li>Simon Postford - Programming, Production</li>
+         <li>Raja Ram - Programming, Live instruments</li></div>
      <ul>
      <center>
      <table>
-         <caption>Tracks</caption>
+         <caption style="color:red">Tracks</caption>
          <thead>
              <tr style="background: gray">
                  <th>Track #</th>
